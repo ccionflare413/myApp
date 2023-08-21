@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myApp';
+
+  FnNumChange(value:number){
+    console.log("test number change is ",value)
+  }
 }
