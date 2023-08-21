@@ -1,6 +1,8 @@
-<div style="padding: 2px;">
+<!-- <div style="padding: 2px;">
     <app-action-bar-guy (numChange)="FnNumChange($event)" [step]="5"></app-action-bar-guy>
 </div>
 <div style="padding: 2px;">
     <app-action-bar-guy (numChange)="FnNumChange($event)" [step]="10"></app-action-bar-guy>
-</div>
+</div> -->
+
+<app-max-min-guy [minLabel]="appMinLabel" [maxLabel]="appMaxLabel" (maxChange)="dAppMaxChange($event)" (minChange)="dAppMinChange($event)"></app-max-min-guy>
