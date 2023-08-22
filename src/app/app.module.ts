@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActionBarGuyComponent } from './action-bar-guy/action-bar-guy.component';
 import { MaxMinGuyComponent } from './max-min-guy/max-min-guy.component';
+import { SqaureFlexComponent } from './sqaure-flex/sqaure-flex.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ActionBarGuyComponent,
-    MaxMinGuyComponent
+    MaxMinGuyComponent,
+    SqaureFlexComponent
   ],
   imports: [
     BrowserModule,

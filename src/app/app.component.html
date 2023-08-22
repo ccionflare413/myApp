@@ -5,4 +5,49 @@
     <app-action-bar-guy (numChange)="FnNumChange($event)" [step]="10"></app-action-bar-guy>
 </div> -->
 
-<app-max-min-guy [minLabel]="appMinLabel" [maxLabel]="appMaxLabel" (maxChange)="dAppMaxChange($event)" (minChange)="dAppMinChange($event)"></app-max-min-guy>
+<!-- <app-max-min-guy [minLabel]="appMinLabel" [maxLabel]="appMaxLabel" (maxChange)="dAppMaxChange($event)" (minChange)="dAppMinChange($event)"></app-max-min-guy> -->
+
+
+<!-- <app-sqaure-flex [divHeight]="sqaureHeight" [divWidth]="squreWidth"></app-sqaure-flex>
+<div>
+    width:
+    <button type="button" (click)="squreWidth=50">50px</button>
+    <button type="button" (click)="squreWidth=100">100px</button>
+    <button type="button" (click)="squreWidth=200">200px</button>
+</div>
+
+<div>
+    Height:
+    <button type="button" (click)="sqaureHeight=50">50px</button>
+    <button type="button" (click)="sqaureHeight=100">100px</button>
+    <button type="button" (click)="sqaureHeight=200">200px</button>
+</div> -->
+
+<!-- <app-action-bar-guy [(counter)] = "appCounter" [step]="20"></app-action-bar-guy>
+<app-sqaure-flex [divWidth]="appCounter"></app-sqaure-flex> -->
+
+<!-- <div *ngIf="activate else elseTemplate">
+<app-action-bar-guy></app-action-bar-guy>
+</div>
+<ng-template #elseTemplate>
+<div>
+    activate now
+</div>
+</ng-template>
+<button type="button" (click)="activate=true">activate</button> -->
+
+<!-- <app-action-bar-guy [inputDisplay]="false"></app-action-bar-guy>
+<app-action-bar-guy [inputDisplay]="true"></app-action-bar-guy> -->
+
+{{customterList[0]}}
+
+<ul>
+    <li *ngFor="let customer of customterList;let i = index">{{customer}}
+        <button (click)="removeCustomer(i)">remove</button>
+    </li>
+</ul>
+
+<button (click)="pushCustomer()">push</button>
+
+<button (click)="unshiftCustomer()">unshift</button>
+

@@ -6,19 +6,20 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./action-bar-guy.component.css']
 })
 export class ActionBarGuyComponent {
-  counter:number = 0;
+  @Input() counter:number = 0;
   @Input() step:number = 1;
-  @Output() numChange = new EventEmitter();
+  @Input() inputDisplay = true;
+  @Output() counterChange = new EventEmitter();
   decrease(){
     if(this.counter-this.step>=0){
       this.counter-=this.step;
-      this.numChange.emit(this.counter);
+      this.counterChange.emit(this.counter);
     }
   }
   increase(){
-    if(this.counter+this.step<=10){
+    if(this.counter+this.step<=100){
       this.counter+=this.step;
-      this.numChange.emit(this.counter);
+      this.counterChange.emit(this.counter);
     }
   }
 }
